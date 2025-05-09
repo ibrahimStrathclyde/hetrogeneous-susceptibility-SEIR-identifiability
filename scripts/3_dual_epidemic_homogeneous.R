@@ -29,10 +29,8 @@ dir.create("figures", showWarnings = FALSE)
 # ==============================================================================
 # Set parameters for simulation
 # ==============================================================================
-n_samples <- 100         # Number of simulated datasets
-K <- 20                  # Number of groups for gamma discretization (for discretized model)
+n_samples <- 200         # Number of simulated datasets
 N <- 100000              # Population size
-
 # First epidemic parameters
 E0_1 <- 1040/1           # Number exposed at t=0 for first epidemic
 I0_1 <- 416/1            # Number infected at t=0 for first epidemic
