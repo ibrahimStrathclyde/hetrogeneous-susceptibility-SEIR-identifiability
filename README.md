@@ -105,7 +105,7 @@ install.packages(c("tidyverse", "deSolve", "GGally", "gridExtra", "grid"))
 Usage
 
 1. Clone this repository:
-git clone https://github.com/yourusername/seir-parameter-identifiability.git
+git clone https://github.com/yourusername/hetrogeneous-susceptibility-SEIR-identifiability.git
 
 2. Run the analysis scripts in numerical order:
 
