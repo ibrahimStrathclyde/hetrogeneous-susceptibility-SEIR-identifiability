@@ -23,8 +23,9 @@ library(gridExtra)
 library(grid)
 
 # Source required functions
-source("MaxLik_fit_functions_reduced_model.R")
-
+source("R/MaxLik_fit_functions.R")
+source("R/utility_functions.R")
+source("R/visualization_functions.R")
 #===============================================================================
 # Set model parameters
 #===============================================================================
