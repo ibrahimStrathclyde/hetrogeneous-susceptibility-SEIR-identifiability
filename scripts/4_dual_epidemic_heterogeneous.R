@@ -32,10 +32,8 @@ dir.create("figures", showWarnings = FALSE)
 # Set parameters for simulation
 # ==============================================================================
 n_samples <- 20          # Number of simulated datasets
-K <- 20                  # Number of groups for gamma discretization
 N <- 100000              # Population size
 alpha_gamma_shape <- 0.5  # Shape and rate of gamma distribution
-
 # First epidemic parameters
 E0_1 <- 1040             # Number exposed at t=0 for first epidemic
 I0_1 <- 416              # Number infected at t=0 for first epidemic
