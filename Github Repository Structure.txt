@@ -1,0 +1,87 @@
+#GitHub Repository Structure
+This file outlines the structure and organization of the SEIR Model Parameter Identifiability Analysis repository.
+
+
+#Overview
+This repository contains the code and analysis for demonstrating parameter identifiability in SEIR epidemic models, with a specific focus on comparing homogeneous and heterogeneous models fitted to single and dual epidemic scenarios.
+
+#Repository Structure
+seir-parameter-identifiability/
+├── README.md                             # Repository documentation
+├── LICENSE                               # MIT License
+├── .gitignore                            # Git ignore rules
+├── install_packages.R                    # Script to install required packages
+├── R/                                    # Core functions
+│   ├── MaxLik_fit_functions.R            # Functions for model fitting
+│   ├── utility_functions.R               # Utility functions
+│   └── visualization_functions.R         # Plotting functions
+├── scripts/                              # Analysis scripts
+│   ├── 1_single_epidemic_homogeneous.R   # Homogeneous model, single epidemic
+│   ├── 2_single_epidemic_heterogeneous.R # Heterogeneous model, single epidemic
+│   ├── 3_dual_epidemic_homogeneous.R     # Homogeneous model, dual epidemics
+│   └── 4_dual_epidemic_heterogeneous.R   # Heterogeneous model, dual epidemics
+├── results/                              # Output data (will be generated)
+│   └── .gitkeep                          # Empty file to track directory in git
+├── figures/                              # Output figures (will be generated)
+│   └── .gitkeep                          # Empty file to track directory in git
+└── paper/                                # Publication files
+    └── RSS_Discussion_Wood.pdf           # Discussion paper
+    
+    Files and Directories
+#Core Documentation
+
+README.md: Main repository documentation with installation and usage instructions
+LICENSE: MIT License for the project
+.gitignore: Specifies files that Git should ignore
+File_Organisation.txt: Guidelines for organizing the repository
+GitHub_Repository_Structure.txt: This file - describes the repository structure
+
+#R Functions
+
+R/MaxLik_fit_functions.R: Contains functions for model fitting using maximum likelihood
+R/utility_functions.R: Contains utility functions for transformations and model definitions
+R/visualization_functions.R: Contains functions for creating figures and visualizations
+
+#Analysis Scripts
+
+scripts/1_single_epidemic_homogeneous.R: Fits a homogeneous SEIR model to a single epidemic
+scripts/2_single_epidemic_heterogeneous.R: Fits a heterogeneous SEIR model to a single epidemic
+scripts/3_dual_epidemic_homogeneous.R: Fits a homogeneous SEIR model to two concurrent epidemics
+scripts/4_dual_epidemic_heterogeneous.R: Fits a heterogeneous SEIR model to two concurrent epidemics
+
+#Output Directories
+
+results/: Directory for storing numerical results and RData files
+figures/: Directory for storing generated figures and plots
+
+#Publication
+
+paper/RSS_Discussion_Wood.pdf: The discussion paper submitted to the Journal of the Royal Statistical Society
+
+#Dependencies
+The code in this repository depends on the following R packages:
+
+tidyverse
+deSolve
+GGally
+gridExtra
+grid
+
+These can be installed by running the install_packages.R script.
+
+
+#Usage Flow
+
+Install required packages using install_packages.R
+Run analysis scripts in numerical order (1-4)
+Examine results in the results and figures directories
+Refer to the discussion paper for interpretation and context
+
+
+Citation
+If you use this code or findings in your research, please cite:
+
+
+Gomes, M. G. M., Mohammed, I., & Robertson, C. (2025). M. Gabriela M. Gomes, Ibrahim Mohammed and Chris Robertson's contribution to the Discussion of 'Some statistical aspects of the Covid-19 Pandemic' by Wood et al. Journal of the Royal Statistical Society Series A: Statistics in Society, 1-3.
+
+    
