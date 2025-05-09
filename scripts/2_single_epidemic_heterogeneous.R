@@ -29,8 +29,7 @@ source("MaxLik_fit_functions_reduced_model.R")
 # Set model parameters
 #===============================================================================
 # Simulation settings
-n_samples <- 20           # Number of samples
-K <- 20                   # Number of groups for gamma discretization
+n_samples <- 200          # Number of samples
 N <- 100000               # Population size
 E0_1 <- 1040/1            # Number of exposed individuals at t=0
 I0_1 <- 416/1             # Number of infectious individuals at t=0
